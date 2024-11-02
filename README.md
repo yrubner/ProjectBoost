@@ -4,8 +4,8 @@ This is my personal repository for Project Boost of udemy course
 ### Lessons
 
 - [x] Section Intro - Project Boost
-- [ ] Your First Script
-- [ ] Scripting Essentials
+- [x] Your First Script
+- [x] Scripting Essentials
 - [ ] Controlling the Player
 - [ ] Blocking Out the Level
 - [ ] Instantiating the Player
