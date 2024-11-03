@@ -9,7 +9,7 @@ This is my personal repository for Project Boost of udemy course
 - [x] Controlling the Player
 - [x] Blocking Out the Level
 - [x] Instantiating the Player
-- [ ] RigitBody3D and Phsyics
+- [x] RigidBody3D and Phsyics
 - [ ] The Input Map
 - [ ] Collision Detection
 - [ ] The Export Annotation
