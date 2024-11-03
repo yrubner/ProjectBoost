@@ -33,7 +33,7 @@ environment = SubResource("Environment_licyw")
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
 shadow_enabled = true
 
-[node name="Floor" type="CSGBox3D" parent="."]
+[node name="Floor" type="CSGBox3D" parent="." groups=["Hazard"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4, 0)
 use_collision = true
 size = Vector3(30, 8, 5)
@@ -46,7 +46,7 @@ radius = 2.0
 height = 0.5
 material = SubResource("StandardMaterial3D_q1k36")
 
-[node name="LandingPad" type="CSGCylinder3D" parent="."]
+[node name="LandingPad" type="CSGCylinder3D" parent="." groups=["Goal"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.25, 0)
 use_collision = true
 radius = 2.0

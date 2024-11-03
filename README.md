@@ -11,7 +11,7 @@ This is my personal repository for Project Boost of udemy course
 - [x] Instantiating the Player
 - [x] RigidBody3D and Phsyics
 - [x] The Input Map
-- [ ] Collision Detection
+- [x] Collision Detection
 - [ ] The Export Annotation
 - [ ] Crashing and Respawning
 - [ ] Loading the Next Level
