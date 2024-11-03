@@ -12,7 +12,7 @@ This is my personal repository for Project Boost of udemy course
 - [x] RigidBody3D and Phsyics
 - [x] The Input Map
 - [x] Collision Detection
-- [ ] The Export Annotation
+- [x] The Export Annotation
 - [ ] Crashing and Respawning
 - [ ] Loading the Next Level
 - [ ] Introducing Tweens
