@@ -13,7 +13,7 @@ This is my personal repository for Project Boost of udemy course
 - [x] The Input Map
 - [x] Collision Detection
 - [x] The Export Annotation
-- [ ] Crashing and Respawning
+- [x] Crashing and Respawning
 - [ ] Loading the Next Level
 - [ ] Introducing Tweens
 - [ ] Tweening Hazards
