@@ -25,8 +25,8 @@ func _on_body_entered(body: Node) -> void:
 		
 func crash_sequence() -> void:
 	print("KABOOM!")
-	get_tree().reload_current_scene()
+	get_tree().call_deferred("reload_current_scene")
 	
 func complete_level(next_level_file: String) -> void:
 	print("LEVEL COMPLETE!")
-	get_tree().change_scene_to_file(next_level_file)
+	get_tree().call_deferred("change_scene_to_file", next_level_file)
