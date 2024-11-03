@@ -8,7 +8,7 @@ This is my personal repository for Project Boost of udemy course
 - [x] Scripting Essentials
 - [x] Controlling the Player
 - [x] Blocking Out the Level
-- [ ] Instantiating the Player
+- [x] Instantiating the Player
 - [ ] RigitBody3D and Phsyics
 - [ ] The Input Map
 - [ ] Collision Detection
