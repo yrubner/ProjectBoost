@@ -14,7 +14,7 @@ This is my personal repository for Project Boost of udemy course
 - [x] Collision Detection
 - [x] The Export Annotation
 - [x] Crashing and Respawning
-- [ ] Loading the Next Level
+- [x] Loading the Next Level
 - [ ] Introducing Tweens
 - [ ] Tweening Hazards
 - [ ] Introducing Audio

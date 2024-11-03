@@ -1,7 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://dpxsgj7rov7cv"]
+[gd_scene load_steps=10 format=3 uid="uid://csddy4b0ykb6f"]
 
-[ext_resource type="Script" path="res://Level/landing_pad.gd" id="1_0yqbd"]
-[ext_resource type="PackedScene" uid="uid://dqrm7kv72kkc" path="res://player.tscn" id="1_lumro"]
+[ext_resource type="Script" path="res://Level/landing_pad.gd" id="1_ncp3w"]
+[ext_resource type="PackedScene" uid="uid://dqrm7kv72kkc" path="res://player.tscn" id="2_abnwl"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_fjb3r"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -18,6 +18,9 @@ glow_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q6vin"]
 albedo_color = Color(0.4, 0.270588, 0.176471, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5jl3y"]
+albedo_color = Color(0.792157, 0.262745, 0.603922, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q1k36"]
 albedo_color = Color(0.251807, 0.471467, 0.834521, 1)
@@ -40,6 +43,12 @@ use_collision = true
 size = Vector3(30, 8, 5)
 material = SubResource("StandardMaterial3D_q6vin")
 
+[node name="Obstacle" type="CSGBox3D" parent="." groups=["Hazard"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+use_collision = true
+size = Vector3(3, 2, 5)
+material = SubResource("StandardMaterial3D_5jl3y")
+
 [node name="LaunchPad" type="CSGCylinder3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.25, 0)
 use_collision = true
@@ -53,12 +62,12 @@ use_collision = true
 radius = 2.0
 height = 0.5
 material = SubResource("StandardMaterial3D_eso7p")
-script = ExtResource("1_0yqbd")
-file_path = "res://Level/level_2.tscn"
+script = ExtResource("1_ncp3w")
+file_path = "res://Level/level_3.tscn"
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.984808, 0.173648, 0, -0.173648, 0.984808, 0, 5, 12)
 top_level = true
 
-[node name="Player" parent="." instance=ExtResource("1_lumro")]
+[node name="Player" parent="." instance=ExtResource("2_abnwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 1.5, 0)
