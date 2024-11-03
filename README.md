@@ -10,7 +10,7 @@ This is my personal repository for Project Boost of udemy course
 - [x] Blocking Out the Level
 - [x] Instantiating the Player
 - [x] RigidBody3D and Phsyics
-- [ ] The Input Map
+- [x] The Input Map
 - [ ] Collision Detection
 - [ ] The Export Annotation
 - [ ] Crashing and Respawning
