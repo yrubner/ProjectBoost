@@ -5,6 +5,8 @@ extends RigidBody3D
 ## How much rotational thrust effects the left and right rotation.
 @export var torque_thrust: float = 100.0
 
+var is_transitioning: bool = false
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if Input.is_action_pressed("boost"):
@@ -18,15 +20,29 @@ func _process(delta: float) -> void:
 
 
 func _on_body_entered(body: Node) -> void:
-	if "Goal" in body.get_groups():
-		complete_level(body.file_path)
-	if "Hazard" in body.get_groups():
-		crash_sequence()
+	if not is_transitioning:
+		if "Goal" in body.get_groups():
+			complete_level(body.file_path)
+		if "Hazard" in body.get_groups():
+			crash_sequence()
 		
 func crash_sequence() -> void:
 	print("KABOOM!")
-	get_tree().call_deferred("reload_current_scene")
+	set_process(false)
+	is_transitioning = true
+	var tween = create_tween()
+	tween.tween_interval(1.0)
+	tween.tween_callback(get_tree().reload_current_scene)
+	#get_tree().call_deferred("reload_current_scene")
+	
 	
 func complete_level(next_level_file: String) -> void:
 	print("LEVEL COMPLETE!")
-	get_tree().call_deferred("change_scene_to_file", next_level_file)
+	set_process(false)
+	is_transitioning = true
+	var tween = create_tween()
+	tween.tween_interval(1.0)
+	tween.tween_callback(
+		get_tree().change_scene_to_file.bind(next_level_file)
+	)
+	#get_tree().call_deferred("change_scene_to_file", next_level_file)

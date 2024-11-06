@@ -15,7 +15,7 @@ This is my personal repository for Project Boost of udemy course
 - [x] The Export Annotation
 - [x] Crashing and Respawning
 - [x] Loading the Next Level
-- [ ] Introducing Tweens
+- [x] Introducing Tweens
 - [ ] Tweening Hazards
 - [ ] Introducing Audio
 - [ ] Controlling Audio with Scripts
