@@ -16,7 +16,7 @@ This is my personal repository for Project Boost of udemy course
 - [x] Crashing and Respawning
 - [x] Loading the Next Level
 - [x] Introducing Tweens
-- [ ] Tweening Hazards
+- [x] Tweening Hazards
 - [ ] Introducing Audio
 - [ ] Controlling Audio with Scripts
 - [ ] Introducing Particles
