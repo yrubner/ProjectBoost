@@ -9,12 +9,17 @@ var is_transitioning: bool = false
 
 @onready var explosion_audio: AudioStreamPlayer = $ExplosionAudio
 @onready var success_audio: AudioStreamPlayer = $SuccessAudio
+@onready var rocket_audio: AudioStreamPlayer3D = $RocketAudio
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if Input.is_action_pressed("boost"):
+		if rocket_audio.playing == false:
+			rocket_audio.play()
 		apply_central_force(basis.y * delta * thrust)
+	else:
+		rocket_audio.stop()
 		
 	if Input.is_action_pressed("rotate_left"):
 		apply_torque(Vector3(0.0, 0.0, torque_thrust * delta))
