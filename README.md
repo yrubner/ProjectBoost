@@ -20,7 +20,7 @@ This is my personal repository for Project Boost of udemy course
 - [x] Introducing Audio
 - [x] Controlling Audio with Scripts
 - [x] Introducing Particles
-- [ ] One Shot Particles
+- [x] One Shot Particles
 - [ ] Improving the Ship
 - [ ] Coloring the Ship
 - [ ] Building Backgrounds
