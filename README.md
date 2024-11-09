@@ -1,6 +1,8 @@
 This is my personal repository for Project Boost of udemy course 
 "Complete Godot 3D: Develop Your Own 3D Games Using Godot 4".
 
+https://www.udemy.com/course/complete-godot-3d/learn/
+
 ### Lessons
 
 - [x] Section Intro - Project Boost
@@ -25,5 +27,5 @@ This is my personal repository for Project Boost of udemy course
 - [x] Coloring the Ship
 - [x] Building Backgrounds
 - [x] Lighting the Scene
-- [ ] Exporting Your Game
-- [ ] Wrap Up - Project Boost
+- [x] Exporting Your Game
+- [x] Wrap Up - Project Boost
