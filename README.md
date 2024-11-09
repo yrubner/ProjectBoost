@@ -19,7 +19,7 @@ This is my personal repository for Project Boost of udemy course
 - [x] Tweening Hazards
 - [x] Introducing Audio
 - [x] Controlling Audio with Scripts
-- [ ] Introducing Particles
+- [x] Introducing Particles
 - [ ] One Shot Particles
 - [ ] Improving the Ship
 - [ ] Coloring the Ship
