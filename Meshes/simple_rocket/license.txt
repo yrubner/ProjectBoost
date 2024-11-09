@@ -1,0 +1,11 @@
+Model Information:
+* title:	simple rocket
+* source:	https://sketchfab.com/3d-models/simple-rocket-f73545304c4240489530b643c913f4c8
+* author:	limine (https://sketchfab.com/lLima9816)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "simple rocket" (https://sketchfab.com/3d-models/simple-rocket-f73545304c4240489530b643c913f4c8) by limine (https://sketchfab.com/lLima9816) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -21,7 +21,7 @@ This is my personal repository for Project Boost of udemy course
 - [x] Controlling Audio with Scripts
 - [x] Introducing Particles
 - [x] One Shot Particles
-- [ ] Improving the Ship
+- [x] Improving the Ship
 - [ ] Coloring the Ship
 - [ ] Building Backgrounds
 - [ ] Lighting the Scene
