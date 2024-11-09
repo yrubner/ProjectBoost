@@ -24,6 +24,6 @@ This is my personal repository for Project Boost of udemy course
 - [x] Improving the Ship
 - [x] Coloring the Ship
 - [x] Building Backgrounds
-- [ ] Lighting the Scene
+- [x] Lighting the Scene
 - [ ] Exporting Your Game
 - [ ] Wrap Up - Project Boost

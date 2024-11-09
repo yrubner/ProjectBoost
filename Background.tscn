@@ -1,7 +1,22 @@
-[gd_scene load_steps=2 format=3 uid="uid://b201yqwip1c1e"]
+[gd_scene load_steps=5 format=3 uid="uid://b201yqwip1c1e"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q6vin"]
 albedo_color = Color(0.4, 0.270588, 0.176471, 1)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ssyjr"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_2xj8r"]
+sky_material = SubResource("ProceduralSkyMaterial_ssyjr")
+
+[sub_resource type="Environment" id="Environment_t8v0j"]
+background_mode = 1
+background_color = Color(0.07, 0.04074, 0.0238, 1)
+sky = SubResource("Sky_2xj8r")
+ambient_light_source = 3
+tonemap_mode = 2
+glow_enabled = true
 
 [node name="Floor" type="CSGBox3D" groups=["Hazard"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4, 0)
@@ -98,3 +113,26 @@ material = SubResource("StandardMaterial3D_q6vin")
 transform = Transform3D(-0.299421, -0.0214962, -0.953879, 0.345539, 0.929439, -0.12941, 0.889354, -0.36835, -0.270866, -7.16856, 19.5671, -12)
 size = Vector3(4, 20, 4)
 material = SubResource("StandardMaterial3D_q6vin")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.984808, -0.111619, 0.133022, 0, 0.766044, 0.642788, -0.173648, -0.633022, 0.754407, 0, 0, 0)
+light_energy = 0.5
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_t8v0j")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12, -1)
+omni_range = 12.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 12, -1)
+omni_range = 12.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 12, -1)
+omni_range = 12.0
+omni_attenuation = 0.5
