@@ -22,7 +22,7 @@ This is my personal repository for Project Boost of udemy course
 - [x] Introducing Particles
 - [x] One Shot Particles
 - [x] Improving the Ship
-- [ ] Coloring the Ship
+- [x] Coloring the Ship
 - [ ] Building Backgrounds
 - [ ] Lighting the Scene
 - [ ] Exporting Your Game
