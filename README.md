@@ -3,6 +3,8 @@ This is my personal repository for Project Boost of udemy course
 
 https://www.udemy.com/course/complete-godot-3d/learn/
 
+![](./demo.gif)
+
 ### Lessons
 
 - [x] Section Intro - Project Boost
